@@ -21,4 +21,13 @@
 </div>
 
 
+<ul id="contact-list">
+    {% for contact in contacts %}
+
+    {% include 'partials/contact.html' %}
+
+    {% endfor %}
+</ul>
+
+
 {% endblock %}

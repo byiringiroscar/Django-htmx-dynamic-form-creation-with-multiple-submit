@@ -7,6 +7,7 @@ from core.models import Contact
 def index(request):
     context = {
         'form': ContactForm(),
+        'contacts': Contact.objects.all()
     }
     return render(request, 'index.html', context)
 
