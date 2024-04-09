@@ -9,3 +9,9 @@ def index(request):
         'form': ContactForm(),
     }
     return render(request, 'index.html', context)
+
+
+def create_contact(request):
+    if request.method == 'POST':
+        pass
+    return render(request, 'partials/form.html', {'form': ContactForm()})
