@@ -1,4 +1,6 @@
-<form action="">
+<form
+hx-post="{% url 'create-contact' %}"
+>
     <div class="row">
         <div class="col-4 col-md-3">
             <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
