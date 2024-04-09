@@ -17,6 +17,13 @@ hx-trigger="click from:#submit-all"
         <!-- <div class="col-3 align-self-end">
             <button class="btn btn-primary" type="submit">Submit</button>
         </div> -->
+
+
+        <div class="col-3 align-self-end">
+            <button class="btn btn-danger" type="button"
+            hx-on="click: this.closest('form').remove()"
+            >Cancel</button>
+        </div>
             
     </div>
 </form>
