@@ -3,6 +3,7 @@ hx-post="{% url 'create-contact' %}"
 hx-target="#contact-list"
 hx-swap="beforeend"
 hx-on="htmx:afterRequest: this.remove()"
+hx-trigger="click from:#submit-all"
 >
     <div class="row">
         <div class="col-4 col-md-3">
@@ -13,9 +14,9 @@ hx-on="htmx:afterRequest: this.remove()"
             <label for="{{ form.phone_number.id_for_label }}">{{ form.phone_number.label }}</label>
             {{ form.phone_number }}
         </div>
-        <div class="col-3 align-self-end">
+        <!-- <div class="col-3 align-self-end">
             <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
+        </div> -->
             
     </div>
 </form>
